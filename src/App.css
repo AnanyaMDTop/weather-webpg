@@ -1,21 +1,56 @@
 .App {
-  .App {
-    text-align: center;
-    background-image: "./assets/background.webp";
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    transition: background-image 0.5s ease-in-out;
-  }
-  
-  
+  text-align: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+}
+
+/* Default background */
+.background-default {
+  background-image: url('./assets/background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sunny Weather */
+.background-sunny {
+  background-image: url('./assets/sunny.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Rainy Weather */
+.background-rainy {
+  background-image: url('./assets/rainy.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Snowy Weather */
+.background-snow {
+  background-image: url('./assets/winter.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Foggy Weather */
+.background-fog {
+  background-image: url('./assets/fog.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .App-header {
   min-height: 100vh;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -26,20 +61,24 @@
 .App-link {
   color: #61dafb;
 }
+
 .error {
-   color:rgb(44, 7, 255);
+  color: rgb(44, 7, 255);
 }
-.search-bar{
-   height:30px;
-   border-radius:10px;
+
+.search-bar {
+  height: 30px;
+  border-radius: 10px;
 }
-.search-button{
-  background-color:rgb(35, 123, 44);
+
+.search-button {
+  background-color: rgb(35, 123, 44);
   color: beige;
   font-family: Arial Narrow Bold;
   font-style: italic;
-  border-radius:10px;
+  border-radius: 10px;
 }
+
 .weather-info {
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
@@ -53,36 +92,9 @@
   font-size: 18px;
   color: navy;
 }
-.lottie-animation{
-  width: 150px;  
+
+.lottie-animation {
+  width: 150px;
   height: 150px;
-  margin: 20px auto; 
+  margin: 20px auto;
 }
-/* Default background */
-.background-default {
-  background-image: url('./assets/background.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Sunny Weather */
-.background-sunny {
-  background-image: url('./assets/sunny.webp');
-}
-
-/* Rainy Weather */
-.background-rainy {
-  background-image: url('./assets/rainy.webp');
-}
-
-/* Snowy Weather */
-.background-snow {
-  background-image: url('./assets/winter.webp');
-}
-
-/* Foggy Weather */
-.background-fog {
-  background-image: url('./assets/fog.webp');
-}
-
